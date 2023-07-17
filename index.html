@@ -138,11 +138,12 @@
         var sound = new Howl({
             src: ['bgm.mp4'],
             volume: 1.0,
-            // autoplay: true,
+            autoplay: true,
             onend : () => {
              console.log('Finished!');
             }
         });
+        sound.play();
         function startBGM(){
             if(bgmStaus){
             
@@ -151,7 +152,7 @@
             }else{
                 bgmStaus=true
                 console.log('bgmStaus::'+bgmStaus)
-                sound.play();
+                // sound.play();
               
             }
 
@@ -230,37 +231,35 @@
                 <!-- <img src="img/icon/wedding-arch.png"  width="100" height="100" /> -->
                 <p class="top-title">순빈 그리고 수빈 <br />저희 결혼합니다.</p>
 
-                <p class="top-title-sub-custom">2023년 9월 17일 일요일 오후 2시</p>
-                <p class="top-title-sub-custom">MJ컨벤션 5층 그랜드볼룸</p>
+                <p class="top-title-sub-custom">2023년 9월 17일 일요일 오후 12시</p>
+                <p class="top-title-sub-custom">부천 상동 라비에벨 웨딩홀 9F</p>
                 <br /><br /><br />
                 <hr class="cover-container" />
                 <br />
             </div>
             <div class="wow fadeInUp">
                 <p class="section1-title section1-main-custom">
-                    예쁜 예감이 들었다 <br />
-                    우리는 언제나 손을 잡고 있게 될 것이다.
+                    너와 함께한 날은 모두, 내가 가장 좋아하는 날이다. <br />
+                    그래서 오늘은, 나의 새로운, 가장 좋아하는 날이다.
                     <br /><br />
-                    - 이이체, 연인 -
                 </p>
                 <br />
             </div>
-            <div class="wow fadeInUp">
+            <!-- <div class="wow fadeInUp">
                 <p class="section1-title section1-sub-custom">
-                    사랑으로 물들어가는 계절,<br />
-                    연인에서 부부라는 이름으로<br />
-                    평생을 함께 하고자 합니다.<br />
-                    귀한 걸음 하시어<br />
-                    두 사람의 언약을 지켜봐 주시면<br />
-                    더 없는 기쁨으로 간직하겠습니다.
+                    처음 만난 그날부터 예쁜 예감이 들었던 저희가,<br />
+                    서로의 삶을 행복으로 물들이기 위해 부부가 되려합니다.<br />
+                    <br />
+                    순빈 그리고 수빈, 이름도 분위기도 닮은 저희 부부의 <br />
+                    한번 뿐인 소중한 날에 오셔서서 따뜻하게 응원 해주시고<br />
+                    저희의 행복한 추억에 평생 남아주시며 감사하겠습니다<br />
                 </p>
                 <br />
-            </div>
+            </div> -->
             <div class="wow fadeInUp">
                 <div class="section1-title section1-sub2-custom">
-                    최향진 이정희
-                    <span class="small">의&nbsp아들&nbsp&nbsp</span>최한서<br />
-                    조은정<span class="small">의&nbsp&nbsp&nbsp딸&nbsp&nbsp&nbsp</span>권지은
+                    조은정<span class="small">의&nbsp아들&nbsp&nbsp</span>권순빈<br />
+                    설동명<span class="small">의&nbsp&nbsp&nbsp딸&nbsp&nbsp&nbsp</span>설수빈
                 </div>
                 <br /><br /><br /><br />
             </div>
@@ -271,7 +270,7 @@
                 축하해 주시는<br />
                 모든 분들에게
             </p>
-            <p
+            <!-- <p
                 class="wow fadeInUp section2-title section2-sub-custom inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
                 안녕하세요.<br />
                 <br />
@@ -291,7 +290,16 @@
                 기분 좋은 소식이 되길 진심으로 바랍니다.<br />
                 <br />
                 신랑 최한서 신부 권지은 올림
+            </p> -->
+            <p class="section1-title section1-sub-custom">
+                처음 만난 그날부터 예쁜 예감이 들었던 저희가,<br />
+                서로의 삶을 행복으로 물들이기 위해 부부가 되려합니다.<br />
+                <br />
+                순빈 그리고 수빈, 이름도 분위기도 닮은 저희 부부의 <br />
+                한번 뿐인 소중한 날에 오셔서서 따뜻하게 응원 해주시고<br />
+                저희의 행복한 추억에 평생 남아주시며 감사하겠습니다<br />
             </p>
+            
             <br /><br /><br /><br />
             <hr class="cover-container" />
             <p class="wow fadeInUp section3-title section3-main">Wedding Photo</p>
