@@ -84,7 +84,6 @@
             wow.init();
             initWeddingPhoto();
             kakaoMap();
-            sound.play();
 
 
         });
@@ -152,7 +151,7 @@
             }else{
                 bgmStaus=true
                 console.log('bgmStaus::'+bgmStaus)
-                // sound.play();
+                sound.play();
               
             }
 
@@ -208,7 +207,7 @@
 
 </head>
 
-<body class="text-center" onclick="startBGM();">
+<body class="text-center">
     <iframe style="display:none" width="560" height="315" src="https://www.youtube.com/embed/nxbYudubYac?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="top-div">
         <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column fade-in-box">
@@ -222,7 +221,7 @@
                 <br />
                 <br />
                 <br />
-                <p  class="top-title-custom">저희 3결혼합니다.</p>
+                <p   onclick="startBGM();" class="top-title-custom">저희 4결혼합니다.</p>
                 
             </h1>
         </header>
