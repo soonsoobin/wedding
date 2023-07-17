@@ -143,7 +143,6 @@
              console.log('Finished!');
             }
         });
-        sound.play();
         function startBGM(){
             if(bgmStaus){
             
@@ -157,6 +156,9 @@
             }
 
         }
+        setTimeout(()=>{
+            sound.play();
+        },5000)
 
 
         function copy_number(id) {
@@ -221,7 +223,7 @@
                 <br />
                 <br />
                 <br />
-                <p onclick="startBGM();" class="top-title-custom">저희 결혼합니다.</p>
+                <p onclick="startBGM();" class="top-title-custom">저희 1결혼합니다.</p>
                 
             </h1>
         </header>
