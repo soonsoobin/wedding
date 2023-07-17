@@ -132,17 +132,30 @@
                 }
             }
         }
+        var bgmStaus = false;
 
         //bgm
         var sound = new Howl({
             src: ['bgm.mp4'],
             volume: 1.0,
-            autoplay: true,
+            // autoplay: true,
             onend : () => {
-            console.log('Finished!');
+             console.log('Finished!');
             }
         });
-        sound.play();
+        function startBGM(){
+            if(bgmStaus){
+            
+                console.log('bgmStaus::'+bgmStaus)
+
+            }else{
+                bgmStaus=true
+                console.log('bgmStaus::'+bgmStaus)
+                sound.play();
+              
+            }
+
+        }
 
 
         function copy_number(id) {
@@ -207,7 +220,8 @@
                 <br />
                 <br />
                 <br />
-                <p class="top-title-custom">저희 결혼합니다.</p>
+                <p onclick="startBGM();" class="top-title-custom">저희 결혼합니다.</p>
+                
             </h1>
         </header>
         <main role="main" class="inner">
