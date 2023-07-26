@@ -35,7 +35,6 @@
             }
         }  
         p.musicPlayClass {
-
             color: rgb(0, 0, 0);
             text-shadow: none;
             text-align: center;
@@ -84,10 +83,8 @@
             let date = new Date("2023-09-17T00:00:00+0900");
             let currentDate = new Date();
 
-
             var distance = date.getTime() - currentDate.getTime()
             result = Math.floor(distance/(1000*60*60*24));
-
             $("#d-day").html(result);
 
             wow.init();
@@ -120,8 +117,6 @@
 
             // 마커가 지도 위에 표시되도록 설정합니다
             marker.setMap(map);
-            // map.setDraggable(false); 
-            // map.setZoomable(false)
         }
 
         function initWeddingPhoto() {
@@ -154,12 +149,9 @@
         });
         function play(){
             if(bgmStaus){
-                
                 console.log('bgmStaus::'+bgmStaus)
-
             }else{
                 bgmStaus=true
-                console.log('bgmStaus::'+bgmStaus)
                 $("#musicPlayButton").remove()
                 sound.play();
               
@@ -171,7 +163,6 @@
 
         function copy_number(id) {
             // alert(id);
-
             var isIOS = false;
 
             if (navigator.userAgent.match(/i(Phone|Pod)/i) != null) {
@@ -236,7 +227,7 @@
                 <br />
                 <br />
                 <p class="top-title-custom">저희 결혼합니다.</p>
-                <p id="musicPlayButton"onclick="play();" class="top-title-custom musicPlayClass">MUSIC PLAY🎵 </p>
+                <p id="musicPlayButton" onclick="play();" class="top-title-custom musicPlayClass">MUSIC PLAY🎵 </p>
 
                 
             </h1>
@@ -256,21 +247,11 @@
                 <p class="section1-title section1-main-custom">
                     너와 함께한 날은 모두, 내가 가장 좋아하는 날이다. <br />
                     그래서 오늘은, 나의 새로운, 가장 좋아하는 날이다.
-                    <br /><br />
+                    <br />
                 </p>
                 <br />
             </div>
-            <!-- <div class="wow fadeInUp">
-                <p class="section1-title section1-sub-custom">
-                    처음 만난 그날부터 예쁜 예감이 들었던 저희가,<br />
-                    서로의 삶을 행복으로 물들이기 위해 부부가 되려합니다.<br />
-                    <br />
-                    순빈 그리고 수빈, 이름도 분위기도 닮은 저희 부부의 <br />
-                    한번 뿐인 소중한 날에 오셔서서 따뜻하게 응원 해주시고<br />
-                    저희의 행복한 추억에 평생 남아주시며 감사하겠습니다<br />
-                </p>
-                <br />
-            </div> -->
+
             <div class="wow fadeInUp">
                 <div class="section1-title section1-sub2-custom">
                     조은정<span class="small">의&nbsp아들&nbsp&nbsp</span>권순빈<br />
@@ -282,17 +263,20 @@
             <br />
             <p
                 class="wow fadeInUp section2-title section2-main-custom inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
-                축하해 주시는<br />
-                모든 분들에게
+                축하해 주시는 모든 분들에게
+                <br />
+                <br />
+                <br />
+                <br />
             </p>
 
             <p class="section1-title section1-sub-custom">
                 처음 만난 그날부터 예쁜 예감이 들었던 저희가,<br />
-                서로의 삶을 행복으로 물들이기 위해 부부가 되려합니다.<br />
+                서로의 삶을 행복으로 물들이기 위해 <br />부부가 되려합니다.<br />
                 <br />
                 순빈 그리고 수빈, 이름도 분위기도 닮은 저희 부부의 <br />
-                한번 뿐인 소중한 날에 오셔서서 따뜻하게 응원 해주시고<br />
-                저희의 행복한 추억에 평생 남아주시며 감사하겠습니다<br />
+                한번 뿐인 소중한 날에 오셔서서 <br />따뜻하게 응원 해주시고<br />
+                저희의 행복한 추억에 <br />평생 남아주시며 감사하겠습니다<br />
             </p>
             
             <br /><br /><br /><br />
