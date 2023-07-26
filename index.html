@@ -33,6 +33,19 @@
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
+        }  
+        p.bgmStart {
+
+            color: rgb(255, 255, 255);
+            text-shadow: none;
+            text-align: center;
+            font-family: KimNamyun;
+            font-size: 2.5rem;
+
+
+            opacity: 0.5;
+
+
         }
     </style>
     <link href="css/cover.css" rel="stylesheet" />    
@@ -143,14 +156,15 @@
              console.log('Finished!');
             }
         });
-        function startBGM(){
+        function play(){
             if(bgmStaus){
-            
+                
                 console.log('bgmStaus::'+bgmStaus)
 
             }else{
                 bgmStaus=true
                 console.log('bgmStaus::'+bgmStaus)
+                $("#musicPlayButton").remove()
                 sound.play();
               
             }
@@ -225,7 +239,9 @@
                 <br />
                 <br />
                 <br />
-                <p   onclick="startBGM();" class="top-title-custom">저희 결혼합니다.</p>
+                <p class="top-title-custom">저희 결혼합니다.</p>
+                <p id="musicPlayButton"onclick="play();" class="top-title-custom bgmStart">MUSIC PLAY🔊 </p>
+
                 
             </h1>
         </header>
