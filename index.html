@@ -121,7 +121,6 @@
 
         function initWeddingPhoto() {
             var images = document.querySelectorAll('img[loading]');
-            console.log('ddd')
             for (var i = 0; i < images.length; i++) {
                 if (images[i].complete) {
                     images[i].classList.add('is-loaded');
@@ -275,8 +274,8 @@
                 서로의 삶을 행복으로 물들이기 위해 <br />부부가 되려합니다.<br />
                 <br />
                 순빈 그리고 수빈, 이름도 분위기도 닮은 저희 부부의 <br />
-                한번 뿐인 소중한 날에 오셔서서 <br />따뜻하게 응원 해주시고<br />
-                저희의 행복한 추억에 <br />평생 남아주시며 감사하겠습니다<br />
+                한번뿐인 소중한 날에 오셔서서 따뜻하게 응원 해주시고<br />
+                저희의 행복한 추억에 평생 남아주시며 감사하겠습니다<br />
             </p>
             
             <br /><br /><br /><br />
@@ -654,7 +653,7 @@
 
                                 <img src="img/icon/bride.jpg" width="50px" height="50px" />&nbsp;&nbsp;
 
-                                우리 <span id="brideAccountNum">1002-0614-13-070</span>&nbsp;&nbsp;설수빈
+                                국민 <span id="brideAccountNum">264-4010-432-8921 </span>&nbsp;&nbsp;설수빈
                                 <button type="button" class="account_copy" data-clipboard-target="#brideAccountNum">
                                     복사
                                 </button>
@@ -666,7 +665,7 @@
                                 <br />
                                 <img src="img/icon/family.png" width="50px" height="50px" />&nbsp;&nbsp;
 
-                                농협 <span id="brideParentAccountNum">006-02-061755</span>&nbsp;&nbsp;설동명
+                                신한 <span id="brideParentAccountNum">110-5214-533-25</span>&nbsp;&nbsp;설동명
                                 <button type="button" class="account_copy"
                                     data-clipboard-target="#brideParentAccountNum">
                                     복사
@@ -773,7 +772,7 @@
 
 
                 <div class="wow fadeInUp section6-location p-3">
-                    <div class="accordion" id="accordionExample2">
+                    <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id=" headingTwo">
                                 <h2 class="mb-0">
@@ -785,16 +784,16 @@
                                 </h2>
                             </div>
 
-                            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo"
-                                data-parent="#accordionExample2">
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body section6-location-sub searchMap">
                                     <a
                                     href="https://m.search.naver.com/search.naver?where=m&query=%EB%B9%A0%EB%A5%B8%EA%B8%B8%EC%B0%BE%EA%B8%B0&nso_path=placeType%5Eplace;name%5E;address%5E;latitude%5E;longitude%5E;code%5E%7Ctype%5Eplace;name%5E%EB%9D%BC%EB%B9%84%EC%97%90%EB%B2%A8%EC%9B%A8%EB%94%A9;address%5E;code%5E37537597;longitude%5E126.7984948;latitude%5E37.4818021%7Cobjtype%5Epath;by%5Epubtrans#map_quickPathSelect">
                                     <img src="img/icon/subway.png">
-                                </a>
-                                <br />
+                                    </a>
                                     <br />
-                                    지하철 7호선 상동역 7번 출구 우측건물 세이브존 백화점 9층
+                                    <br />
+                                    <p class="searchInfo" style="font-weight: bold;">지하철 7호선 상동역 7번 출구 우측건물 세이브존 백화점 9층</p>
+                                    <br />
                                 </div>
                             </div>
                         </div>
@@ -803,28 +802,28 @@
                                 <h2 class="mb-0">
                                     <button class="section6-location section6-location-main btn btn-block collapsed"
                                         type="button" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
+                                        aria-expanded="false" aria-controls="collapseOne">
                                         대중교통 / 자동차 이용시 - 빠른길찾기
                                     </button>
                                     
                                 </h2>
                             </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body section6-location-sub searchMap">
                                     <a
                                         href="https://m.search.naver.com/search.naver?where=m&query=%EB%B9%A0%EB%A5%B8%EA%B8%B8%EC%B0%BE%EA%B8%B0&nso_path=placeType%5Eplace;name%5E;address%5E;latitude%5E;longitude%5E;code%5E%7Ctype%5Eplace;name%5E%EB%9D%BC%EB%B9%84%EC%97%90%EB%B2%A8%EC%9B%A8%EB%94%A9;address%5E;code%5E37537597;longitude%5E126.7984948;latitude%5E37.4818021%7Cobjtype%5Epath;by%5Epubtrans#map_quickPathSelect">
                                         <img src="img/icon/road.png">
                                     </a>
                                     <br />
-                                    <p class="searchInfo">세이브존 B2층 ~ B4층 주차장 혹은 맞은편 AJ파크 주차장을 이용해주세요 </p>
-
                                     <br />
-                                    
                                     <p>위 아이콘을 클릭해주세요! </p>
-                                    <p class="searchInfo">안전운전 하시고 조심히 와주세요 </p>
+                                    <p class="searchInfo" style="font-weight: bold;">세이브존 B2층 ~ B4층 주차장 혹은 맞은편 AJ파크 주차장을 이용해주세요 </p>
+                                    <br />
+
+                                    
+                                    <!-- <p class="searchInfo">안전운전 하시고 조심히 와주세요 </p>
                                     <p class="searchInfo">감사하는 마음으로 반갑게 </p>
-                                    <p class="searchInfo">맞이할 준비가되었습니다 :) </p>
+                                    <p class="searchInfo">맞이할 준비가되었습니다 :) </p> -->
                                   
                                 </div>
                             </div>
